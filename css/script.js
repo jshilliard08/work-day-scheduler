@@ -50,7 +50,7 @@ $(document).ready(function(){
     $("#currentDay").text(moment().format("llll"));
 
     // Determines which color class to apply based on the current hour
-    var elements = $("row");
+    var elements = $(".time-block");
     var d = new Date();
    var h = d.getHours();
    // var h = 15;
