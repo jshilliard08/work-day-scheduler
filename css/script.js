@@ -25,15 +25,12 @@ $(document).ready(function(){
     var t5 = localStorage.getItem("2pm");
     $("#2PM").text(t5);
 
-    // 3PM
     var t6 = localStorage.getItem("3pm");
     $("#3PM").text(t6);
 
-    // 4PM
     var t7 = localStorage.getItem("4pm");
     $("#4PM").text(t7);
     
-    // 5PM
     var t8 = localStorage.getItem("5pm");
     $("#5PM").text(t8);
 
@@ -43,7 +40,7 @@ $(document).ready(function(){
         var value = $(this).siblings(".task").val(); // This gets the VALUE of the description in jQuery
         var time = $(this).siblings(".hour").text();
         localStorage.setItem(time, value);
-        $("this").siblings(".task").textContent(localStorage.value);
+        $("this").siblings(".task").text(localStorage.value);
 
     });
     // Displays the current date and time
